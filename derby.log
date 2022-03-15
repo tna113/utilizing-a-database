@@ -1,0 +1,77 @@
+----------------------------------------------------------------
+Sun May 09 23:56:41 EDT 2021D001 : [0] The Apache Software Foundation - Apache Derby - 10.15.1.3 - (1853019), [1] a816c00e-0179-546b-7d04-00000e4e0000, [2] C:\Users\bbyte\Documents\mcc\2021 spring\advanced java programming\Proj4\Project4Event\EventDatabase, [3] jdk.internal.loader.ClassLoaders$AppClassLoader@2d6e8792, [4] file:/C:/Users/bbyte/Documents/mcc/2021%20spring/advanced%20java%20programming/Proj4/Project4Event/db-derby-10.15.1.3-bin/lib/derby.jar
+java.vendor=AdoptOpenJDK
+java.runtime.version=11.0.8+10
+user.dir=C:\Users\bbyte\Documents\mcc\2021 spring\advanced java programming\Proj4\Project4Event
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+C005 : [0] 
+----------------------------------------------------------------
+Sun May 09 23:56:42 EDT 2021D002 : [0] a816c00e-0179-546b-7d04-00000e4e0000, [1] C:\Users\bbyte\Documents\mcc\2021 spring\advanced java programming\Proj4\Project4Event\EventDatabase, [2] jdk.internal.loader.ClassLoaders$AppClassLoader@2d6e8792
+Sun May 09 23:56:45 EDT 2021 Thread[JavaFX Application Thread,5,main] Cleanup action starting
+java.sql.SQLException: XJ004.C : [0] EventDatabase
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:115)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:141)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Util.java:225)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Util.java:220)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(EmbedConnection.java:3215)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(EmbedConnection.java:772)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(EmbedConnection.java:442)
+	at org.apache.derby.iapi.jdbc.InternalDriver$1.run(InternalDriver.java:660)
+	at org.apache.derby.iapi.jdbc.InternalDriver$1.run(InternalDriver.java:656)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:654)
+	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:300)
+	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:967)
+	at org.apache.derby.iapi.jdbc.AutoloadedDriver.connect(AutoloadedDriver.java:136)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at sample.Main.stop(Main.java:328)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$10(LauncherImpl.java:865)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: ERROR XJ004: XJ004.C : [0] EventDatabase
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(SQLExceptionFactory.java:170)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:75)
+	... 25 more
+============= begin nested exception, level (1) ===========
+ERROR XJ004: XJ004.C : [0] EventDatabase
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:300)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(SQLExceptionFactory.java:170)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:75)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(SQLExceptionFactory.java:141)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Util.java:225)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Util.java:220)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(EmbedConnection.java:3215)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(EmbedConnection.java:772)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(EmbedConnection.java:442)
+	at org.apache.derby.iapi.jdbc.InternalDriver$1.run(InternalDriver.java:660)
+	at org.apache.derby.iapi.jdbc.InternalDriver$1.run(InternalDriver.java:656)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:654)
+	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:300)
+	at org.apache.derby.iapi.jdbc.InternalDriver.connect(InternalDriver.java:967)
+	at org.apache.derby.iapi.jdbc.AutoloadedDriver.connect(AutoloadedDriver.java:136)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at sample.Main.stop(Main.java:328)
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$10(LauncherImpl.java:865)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:455)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:428)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:427)
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:96)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:174)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+============= end nested exception, level (1) ===========
+Cleanup action completed
